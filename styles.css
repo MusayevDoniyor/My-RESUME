@@ -26,6 +26,7 @@ body {
   padding-bottom: 15px;
   background: #f9f9f9;
   border-radius: 10px;
+  padding: 0 7px;
 }
 
 .profile-image {
@@ -193,5 +194,45 @@ ul li:not(:last-child) {
 
   .links a {
     font-size: 0.9em;
+  }
+}
+
+/* Existing CSS */
+
+.skills ul li {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.skills ul li i {
+  font-size: 1.5em;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+/* Optional: Adjust font sizes for icons and list items for better alignment */
+.skills ul li {
+  font-size: 1em;
+}
+
+/* Responsiveness for icons */
+@media (max-width: 768px) {
+  .skills ul li {
+    font-size: 0.9em;
+  }
+
+  .skills ul li i {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills ul li {
+    font-size: 0.8em;
+  }
+
+  .skills ul li i {
+    font-size: 1.2em;
   }
 }
